@@ -1,0 +1,35 @@
+{
+  "name": "shopping-cart",
+  "version": "0.0.1",
+  "description": "react shopping cart",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhambattoo/shopping-cart.git"
+  },
+  "keywords": [
+    "react",
+    "javsacript",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "shubhambattoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhambattoo/shopping-cart/issues"
+  },
+  "homepage": "https://github.com/shubhambattoo/shopping-cart#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
