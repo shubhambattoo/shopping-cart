@@ -21,6 +21,17 @@ const productSchema = new mongoose.Schema({
     type: Number,
     default: Date.now(),
   },
+  currency: {
+    type: Object,
+    default: {
+      id: 'RUPEES',
+      format: '₹',
+    },
+  },
+  sizes: {
+    type: Array,
+    required: true
+  },
 });
 
 module.exports = mongoose.model('Product', productSchema);
