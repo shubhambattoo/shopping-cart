@@ -3,10 +3,10 @@ import React from 'react';
 export const Footer = () => {
   return (
     <footer
-      class="footer"
+      className="footer"
       style={{ backgroundColor: '#444', color: '#f1f1f1' }}
     >
-      <div class="content has-text-centered">
+      <div className="content has-text-centered">
         <p>
           <strong style={{ color: '#f1f1f1' }}>
             Shopping Cart <em>Buy-IT </em>

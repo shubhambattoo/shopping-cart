@@ -1,7 +1,23 @@
 .products {
-	margin: 15px 0;
+  margin: 25px 0;
 }
 
-.product footer button{
-	border-radius: 0;
+.product footer button {
+  border-radius: 0;
+}
+
+.product {
+  box-shadow: 0 .5em 1em .5em rgba(0, 0, 0, 0.1);
+}
+
+.product .card-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.product .card-header .price {
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 18px;
 }

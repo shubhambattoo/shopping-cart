@@ -20,7 +20,7 @@ export const Header = () => {
               width="32px"
               height="32px"
               viewBox="0 0 32 32"
-              enable-background="new 0 0 32 32"
+              enableBackground="new 0 0 32 32"
             >
               <g>
                 <polygon
@@ -31,8 +31,8 @@ export const Header = () => {
               <g>
                 <g>
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="#413A4D"
                     d="M23.508,24.996c-0.829,0-1.502,0.673-1.502,1.502
 			c0,0.83,0.673,1.502,1.502,1.502c0.83,0,1.502-0.672,1.502-1.502C25.01,25.669,24.338,24.996,23.508,24.996z M8.508,24.996
