@@ -1,12 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Sizes.css';
 
-export const Sizes = () => {
+export const Sizes = ({ products }) => {
   const [sizes, setSizes] = useState([]);
   const [isSizes, setIsSizes] = useState(false);
+  const [selectedSizes, setSelectedSizes] = useState([]);
+
+  useEffect(() => {
+    const sizeSet = new Set();
+    products.forEach((p) => {
+      sizeSet.add(...p.sizes);
+    });
+    const sizesArr = [...sizeSet];
+    setSizes(sizesArr);
+  }, [products]);
 
   function showSizes() {
     setIsSizes(!isSizes);
+  }
+
+  function handleOnCheck(e) {
+    const isChecked = e.target.checked;
+    const size = e.target.name;
+    if (isChecked) {
+      setSelectedSizes((sizes) => [...sizes, size]);
+    } else {
+      const selectedFiltered = selectedSizes.filter((ss) => size !== ss);
+      setSelectedSizes(selectedFiltered);
+    }
   }
 
   return (
@@ -19,54 +40,20 @@ export const Sizes = () => {
       </button>
       {isSizes && (
         <div className="sizes">
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
-          <div className="size">
-            <label htmlFor="10.5" className="checkbox">
-              <input type="checkbox" name="10.5" id="10.5" />
-              10.5
-            </label>
-          </div>
+          {sizes.length &&
+            sizes.map((s) => (
+              <div className="size" key={s}>
+                <label htmlFor={s} className="checkbox">
+                  <input
+                    type="checkbox"
+                    name={s}
+                    id={s}
+                    onChange={handleOnCheck}
+                  />
+                  {s}
+                </label>
+              </div>
+            ))}
         </div>
       )}
     </div>

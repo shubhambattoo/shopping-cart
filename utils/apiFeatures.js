@@ -19,7 +19,6 @@ class ApiFeatures {
 
     // make query
     this.query = this.query.find(JSON.parse(queryStr));
-    // let query = Tour.find(JSON.parse(queryStr));
     return this;
   }
 
@@ -45,7 +44,7 @@ class ApiFeatures {
 
   paginate() {
     const page = this.queryParams.page * 1 || 1;
-    const limit = this.queryParams.limit * 1 || 6;
+    const limit = this.queryParams.limit * 1 || 12;
     const skip = (page - 1) * limit;
 
     this.query = this.query.skip(skip).limit(limit);
