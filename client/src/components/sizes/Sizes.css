@@ -1,0 +1,36 @@
+.size-container {
+  margin-top: 15px;
+}
+
+.size-container button {
+  border: 0;
+  background-color: #f1f1f1;
+  box-shadow: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 17px;
+}
+
+.size-container button:hover {
+  background-color: lightgray;
+}
+
+.sizes {
+  display: grid;
+  grid-template-columns: repeat(7, 10%);
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.size label {
+  display: flex;
+  align-items: center;
+}
+
+.size input[type='checkbox'] {
+  margin-right: 3px;
+}
