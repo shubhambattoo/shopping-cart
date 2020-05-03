@@ -14,7 +14,11 @@ exports.createProduct = catchAsync(async (req, res, next) => {
 });
 
 exports.getProducts = catchAsync(async (req, res, next) => {
-  const features = new ApiFeatures(Product.find(), req.query).sort().paginate();
+  const features = new ApiFeatures(Product.find(), req.query)
+    .filter()
+    .sort()
+    .paginate()
+    .limitFields();
 
   const docs = await features.query;
 

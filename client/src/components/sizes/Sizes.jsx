@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Sizes.css';
 
-export const Sizes = ({ products }) => {
+export const Sizes = ({ products, filterProducts }) => {
   const [sizes, setSizes] = useState([]);
   const [isSizes, setIsSizes] = useState(false);
   const [selectedSizes, setSelectedSizes] = useState([]);

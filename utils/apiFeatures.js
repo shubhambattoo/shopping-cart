@@ -10,10 +10,15 @@ class ApiFeatures {
     excludedFields.forEach((el) => {
       delete queryString[el];
     });
+    
+    if (queryString.sizes && queryString.sizes.in) {
+      const arrSizes = queryString.sizes.in.split(',');
+      queryString.sizes = { in: arrSizes };
+    }
 
     // replace the operators
     let queryStr = JSON.stringify(queryString);
-    queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (str) => {
+    queryStr = queryStr.replace(/\b(gte|gt|lte|lt|in)\b/g, (str) => {
       return `$${str}`;
     });
 

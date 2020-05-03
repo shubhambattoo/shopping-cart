@@ -7,7 +7,7 @@ export function request(endpoint, { body, ...customConfig } = {}) {
     headers: {
       ...headers,
       ...customConfig.headers,
-    },
+    }
   };
 
   if (body) {

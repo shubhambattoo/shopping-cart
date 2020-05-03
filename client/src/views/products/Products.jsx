@@ -7,30 +7,45 @@ import { Sort } from '../../components/sort/Sort';
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
+  const [sortBy, setSortBy] = useState('created');
 
   useEffect(() => {
-    const url = `products`;
-    request(url)
-      .then((res) => {
-        setProducts(res.data.products);
-      })
-      .catch((err) => {
-        setProducts([]);
-      });
-  }, []);
+    const url = `products?sort=${sortBy}`;
+    getProducts(url, setProducts);
+  }, [sortBy]);
+
+  function sortProducts(value) {
+    switch (value) {
+      case '1':
+        setSortBy('-price');
+        break;
+      case '2':
+        setSortBy('price');
+        break;
+      case '0':
+        setSortBy('created');
+        break;
+      default:
+        break;
+    }
+  }
+
+  function handleProductsFilter(selectedSizes) {
+    return false;
+  }
 
   return (
     <section className="container">
       {products.length && (
         <div className="columns">
           <div className="column is-three-quarters">
-            <Sizes products={products} />
+            <Sizes products={products} filterProducts={handleProductsFilter} />
           </div>
           <div
             className="column"
             style={{ display: 'flex', justifyContent: 'flex-end' }}
           >
-            <Sort />
+            <Sort onSortChange={sortProducts} />
           </div>
         </div>
       )}
@@ -48,3 +63,13 @@ export const Products = () => {
     </section>
   );
 };
+
+function getProducts(url, setProducts) {
+  request(url)
+    .then((res) => {
+      setProducts(res.data.products);
+    })
+    .catch((err) => {
+      setProducts([]);
+    });
+}
