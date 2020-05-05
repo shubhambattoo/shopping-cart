@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './Products.css';
 import { Sizes } from '../../components/sizes/Sizes';
 import { request } from '../../utils/fetch';
@@ -30,13 +30,21 @@ export const Products = () => {
     }
   }
 
-  function handleProductsFilter(selectedSizes) {
-    return false;
-  }
+  const handleProductsFilter = useCallback(
+    (selectedSizes) => {
+      console.log('here');
+      const url = selectedSizes.length
+        ? `products?sort=${sortBy}&sizes[in]=${selectedSizes.join(',')}`
+        : `products?sort=${sortBy}`;
+
+      getProducts(url, setProducts);
+    },
+    [sortBy]
+  );
 
   return (
     <section className="container">
-      {products.length && (
+      {products.length > 0 && (
         <div className="columns">
           <div className="column is-three-quarters">
             <Sizes products={products} filterProducts={handleProductsFilter} />

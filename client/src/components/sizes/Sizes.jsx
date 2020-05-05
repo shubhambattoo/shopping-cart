@@ -19,6 +19,10 @@ export const Sizes = ({ products, filterProducts }) => {
     setIsSizes(!isSizes);
   }
 
+  useEffect(() => {
+    filterProducts(selectedSizes)
+  }, [selectedSizes, filterProducts])
+
   function handleOnCheck(e) {
     const isChecked = e.target.checked;
     const size = e.target.name;
