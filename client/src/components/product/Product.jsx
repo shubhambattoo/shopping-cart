@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Product = ({ product }) => {
   return (
-    <div className="column is-4" key={product._id}>
+    <div className="column is-3" key={product._id}>
       <div className="card product">
         <div className="card-image">
           <figure className="image">

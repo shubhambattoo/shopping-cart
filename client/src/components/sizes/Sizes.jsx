@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Sizes.css';
+import Checkbox from '../checkbox/Checkbox';
 
 export const Sizes = ({ products, filterProducts }) => {
   const [sizes, setSizes] = useState([]);
@@ -20,8 +21,8 @@ export const Sizes = ({ products, filterProducts }) => {
   }
 
   useEffect(() => {
-    filterProducts(selectedSizes)
-  }, [selectedSizes, filterProducts])
+    filterProducts(selectedSizes);
+  }, [selectedSizes, filterProducts]);
 
   function handleOnCheck(e) {
     const isChecked = e.target.checked;
@@ -47,15 +48,7 @@ export const Sizes = ({ products, filterProducts }) => {
           {sizes.length &&
             sizes.map((s) => (
               <div className="size" key={s}>
-                <label htmlFor={s} className="checkbox">
-                  <input
-                    type="checkbox"
-                    name={s}
-                    id={s}
-                    onChange={handleOnCheck}
-                  />
-                  {s}
-                </label>
+                <Checkbox label={s} name={s} id={s} onChange={handleOnCheck} />
               </div>
             ))}
         </div>

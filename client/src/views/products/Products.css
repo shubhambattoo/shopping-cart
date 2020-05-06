@@ -7,7 +7,7 @@
 }
 
 .product {
-  box-shadow: 0 .5em 1em .5em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 .25em .8em .3em rgba(0, 0, 0, 0.1);
 }
 
 .product .card-header {

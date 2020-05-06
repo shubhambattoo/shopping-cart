@@ -3,18 +3,27 @@ import './Products.css';
 import { Sizes } from '../../components/sizes/Sizes';
 import { request } from '../../utils/fetch';
 import { Product } from '../../components/product/Product';
-import { Sort } from '../../components/sort/Sort';
+import Select from '../../components/select/Select';
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
   const [sortBy, setSortBy] = useState('created');
+  const [sortVal, setsortVal] = useState('0');
+
+  const selectOptions = [
+    { text: 'Order By', value: 0 },
+    { text: 'Highest to Lowest Price', value: 1 },
+    { text: 'Lowest to Highest Price', value: 2 },
+  ];
 
   useEffect(() => {
     const url = `products?sort=${sortBy}`;
     getProducts(url, setProducts);
   }, [sortBy]);
 
-  function sortProducts(value) {
+  function sortProducts(e) {
+    const value = e.target.value;
+    setsortVal(value);
     switch (value) {
       case '1':
         setSortBy('-price');
@@ -32,7 +41,6 @@ export const Products = () => {
 
   const handleProductsFilter = useCallback(
     (selectedSizes) => {
-      console.log('here');
       const url = selectedSizes.length
         ? `products?sort=${sortBy}&sizes[in]=${selectedSizes.join(',')}`
         : `products?sort=${sortBy}`;
@@ -53,12 +61,12 @@ export const Products = () => {
             className="column"
             style={{ display: 'flex', justifyContent: 'flex-end' }}
           >
-            <Sort onSortChange={sortProducts} />
+            <Select options={selectOptions} value={sortVal} onChange={sortProducts} />
           </div>
         </div>
       )}
       <div className="products">
-        <div className="columns is-multiline is-6 is-variable">
+        <div className="columns is-multiline is-3 is-variable">
           {products && products.length > 0 ? (
             products.map((product) => (
               <Product product={product} key={product._id} />
