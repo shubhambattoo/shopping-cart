@@ -3,6 +3,7 @@ import cartReducer, { SET_PRODUCT } from './cartReducer';
 
 const initialState = {
   cart: [],
+  cartSize: 0,
 };
 
 export const CartContext = createContext(initialState);
@@ -16,7 +17,9 @@ export const CartProvider = ({ children }) => {
   }
 
   return (
-    <CartContext.Provider value={{ cart: state.cart, setProduct }}>
+    <CartContext.Provider
+      value={{ cart: state.cart, cartSize: state.cartSize, setProduct }}
+    >
       {children}
     </CartContext.Provider>
   );

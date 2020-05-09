@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/cartContext';
 
 export const Header = () => {
+  const { cartSize } = useContext(CartContext);
   return (
     <header>
       <nav
@@ -46,8 +48,7 @@ export const Header = () => {
                 </g>
               </g>
             </svg>
-            &nbsp;
-            Buy-IT
+            &nbsp; Buy-IT
           </Link>
         </div>
 
@@ -69,7 +70,7 @@ export const Header = () => {
             </Link>
             <Link className="navbar-item" to="/cart">
               <i className="material-icons">shopping_cart</i>
-              Cart
+              Cart ({cartSize})
             </Link>
           </div>
         </div>

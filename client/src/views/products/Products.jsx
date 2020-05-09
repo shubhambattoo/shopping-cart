@@ -4,11 +4,13 @@ import { Sizes } from '../../components/sizes/Sizes';
 import { request } from '../../utils/fetch';
 import { Product } from '../../components/product/Product';
 import Select from '../../components/select/Select';
+import { Loader } from '../../components/loader/Loader';
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
   const [sortBy, setSortBy] = useState('created');
   const [sortVal, setsortVal] = useState('0');
+  const [isLoading, setIsLoading] = useState(true);
 
   const selectOptions = [
     { text: 'Order By', value: 0 },
@@ -19,6 +21,7 @@ export const Products = () => {
   useEffect(() => {
     const url = `products?sort=${sortBy}`;
     getProducts(url, setProducts);
+    setIsLoading(false);
   }, [sortBy]);
 
   function sortProducts(e) {
@@ -61,7 +64,11 @@ export const Products = () => {
             className="column"
             style={{ display: 'flex', justifyContent: 'flex-end' }}
           >
-            <Select options={selectOptions} value={sortVal} onChange={sortProducts} />
+            <Select
+              options={selectOptions}
+              value={sortVal}
+              onChange={sortProducts}
+            />
           </div>
         </div>
       )}
@@ -75,6 +82,7 @@ export const Products = () => {
             <div>No Records Found</div>
           )}
         </div>
+        {isLoading && <Loader />}
       </div>
     </section>
   );
