@@ -62,12 +62,13 @@ export const Products = () => {
           </div>
           <div
             className="column"
-            style={{ display: 'flex', justifyContent: 'flex-end' }}
+            style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 75 }}
           >
             <Select
               options={selectOptions}
               value={sortVal}
               onChange={sortProducts}
+              classes={'is-rounded'}
             />
           </div>
         </div>

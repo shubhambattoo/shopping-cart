@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header>
       <nav
-        className="navbar is-light"
+        className="navbar is-light is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >

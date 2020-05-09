@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Select = ({ options, value, ...props }) => {
+const Select = ({ options, value, classes = '', ...props }) => {
   return (
     <>
-      <div className="select is-rounded" style={{ marginTop: '15px' }}>
+      <div className={'select ' + classes}>
         <select {...props} value={value}>
-          {options.map((item) => {
+          {options.map((item, index) => {
             return (
-              <option value={item.value} key={item.value}>
+              <option value={item.value} disabled={index === 0} key={item.value}>
                 {item.text}
               </option>
             );
