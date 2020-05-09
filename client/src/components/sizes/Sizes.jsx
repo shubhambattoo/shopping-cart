@@ -8,10 +8,11 @@ export const Sizes = ({ products, filterProducts }) => {
   const [selectedSizes, setSelectedSizes] = useState([]);
 
   useEffect(() => {
-    const sizeSet = new Set();
+    const arr = [];
     products.forEach((p) => {
-      sizeSet.add(...p.sizes);
+      arr.push(...p.sizes)
     });
+    const sizeSet = new Set(arr);
     const sizesArr = [...sizeSet];
     setSizes(sizesArr);
   }, [products]);

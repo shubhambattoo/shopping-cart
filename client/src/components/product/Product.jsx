@@ -18,11 +18,6 @@ export const Product = ({ product }) => {
             {product.currency.format} {product.price.toFixed(2)}
           </div>
         </header>
-        {product.description && (
-          <div className="card-content">
-            <div className="content">{product.description}</div>
-          </div>
-        )}
         <footer className="card-footer">
           <button className="card-footer-item button is-text">
             Add To Cart
