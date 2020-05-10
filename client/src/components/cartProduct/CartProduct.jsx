@@ -1,18 +1,13 @@
-import React from 'react';
-import Select from '../../components/select/Select';
+import React, { useState, useEffect } from 'react';
 
 const CartProduct = ({ cartItem }) => {
-  const quantities = [
-    { text: 'Quantities', value: '0' },
-    { text: '1', value: '1' },
-    { text: '2', value: '2' },
-    { text: '3', value: '3' },
-  ];
+  const [qty, setQty] = useState(0);
 
-  function mapToSizes(arr) {
-    const mapped = arr.map((el) => ({ text: el, value: el }));
-    return [{ text: 'Sizes', value: '0' }, ...mapped];
-  }
+  useEffect(() => {
+    if (cartItem) {
+      setQty(cartItem.qty);
+    }
+  }, [cartItem]);
 
   return (
     <div className="cart-product">
@@ -26,16 +21,16 @@ const CartProduct = ({ cartItem }) => {
           </div>
           <div className="cart-product__content__meta">Sold By: Nik</div>
           <div className="cart-product__content__filter">
-            <div className="filter select">
-              <Select options={mapToSizes(cartItem.product.sizes)} value={0} />
-            </div>
-            <div className="filter select">
-              <Select options={quantities} value={0} />
+            <div className="text">Qty</div>
+            <div className="filter">
+              <i className="material-icons">add</i>
+              <span>{qty}</span>
+              <i className="material-icons">remove</i>
             </div>
           </div>
         </div>
         <div className="cart-product__content__price">
-          {cartItem.product.currency.format} {cartItem.product.price.toFixed(2)}
+          {cartItem.product.currency.format} {cartItem.allCost.toFixed(2)}
         </div>
       </div>
       <div className="cart-product__footer">

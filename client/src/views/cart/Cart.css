@@ -52,9 +52,27 @@
   display: flex;
 }
 
-.cart-product__content__filter .filter {
+.cart-product__content__filter .text {
   margin-right: 15px;
-  font-size: 14px;
+}
+
+.cart-product__content__filter .filter {
+  display: inline-flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+.cart-product__content__filter i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.cart-product__content__filter i:nth-of-type(1) {
+  margin-right: 5px;
+}
+
+.cart-product__content__filter .filter span {
+  margin-right: 5px;
 }
 
 .cart-product__content__price {

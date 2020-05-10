@@ -1,14 +1,12 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
 
 export const Product = ({ product }) => {
   const { setProduct } = useContext(CartContext);
 
   function addToCart() {
     const cartProduct = {
-      id: shortid(),
       qty: 1,
       product,
     };
@@ -51,6 +49,6 @@ Product.propTypes = {
     name: PropTypes.string,
     price: PropTypes.number,
     description: PropTypes.string,
-    _id: PropTypes.string
+    _id: PropTypes.string,
   }).isRequired,
 };
