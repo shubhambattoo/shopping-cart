@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Cart.css';
 import CartProduct from '../../components/cartProduct/CartProduct';
+import { CartContext } from '../../context/cartContext';
 
 export const Cart = () => {
+  const { cart } = useContext(CartContext);
+
   return (
     <div className="container">
       <div className="content" style={{ marginTop: '75px' }}>
@@ -10,7 +13,11 @@ export const Cart = () => {
       </div>
       <div className="columns">
         <div className="column is-9">
-          <CartProduct />
+          <div className="cart-details">
+            {cart.map((cartItem) => (
+              <CartProduct cartItem={cartItem} key={cartItem.id} />
+            ))}
+          </div>
         </div>
         <div className="column">
           <div className="card total-box">
@@ -26,10 +33,10 @@ export const Cart = () => {
                 <div className="text">Shipping</div>
                 <div className="price">0.00</div>
               </div>
-                <div className="item total">
-                  <div className="text">Total</div>
-                  <div className="price">14995.00</div>
-                </div>
+              <div className="item total">
+                <div className="text">Total</div>
+                <div className="price">14995.00</div>
+              </div>
             </div>
             <div className="card-footer">
               <div className="card-footer-item">
