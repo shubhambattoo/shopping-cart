@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { CartContext } from '../../context/cartContext';
 
 const CartProduct = ({ cartItem }) => {
+  const { removeProduct } = useContext(CartContext);
   const [qty, setQty] = useState(0);
 
   useEffect(() => {
@@ -8,6 +12,10 @@ const CartProduct = ({ cartItem }) => {
       setQty(cartItem.qty);
     }
   }, [cartItem]);
+
+  function handleRemoveProduct(id) {
+    removeProduct(id);
+  }
 
   return (
     <div className="cart-product">
@@ -34,10 +42,32 @@ const CartProduct = ({ cartItem }) => {
         </div>
       </div>
       <div className="cart-product__footer">
-        <button className="button is-danger">Remove</button>
+        <button
+          className="button is-danger"
+          onClick={() => handleRemoveProduct(cartItem.id)}
+        >
+          Remove
+        </button>
       </div>
     </div>
   );
+};
+
+CartProduct.propTypes = {
+  id: PropTypes.string,
+  allCost: PropTypes.number,
+  date: PropTypes.number,
+  qty: PropTypes.number,
+  product: PropTypes.shape({
+    image: PropTypes.string,
+    created: PropTypes.number,
+    currency: PropTypes.object,
+    sizes: PropTypes.array,
+    name: PropTypes.string,
+    price: PropTypes.number,
+    description: PropTypes.string,
+    _id: PropTypes.string,
+  }),
 };
 
 export default CartProduct;

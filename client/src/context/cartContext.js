@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import cartReducer, { SET_PRODUCT } from './cartReducer';
+import cartReducer, { SET_PRODUCT, REMOVE_PRODUCT } from './cartReducer';
 
 const initialState = {
   cart: [],
@@ -17,6 +17,10 @@ export const CartProvider = ({ children }) => {
     dispatch({ type: SET_PRODUCT, payload: product });
   }
 
+  function removeProduct(id) {
+    dispatch({ type: REMOVE_PRODUCT, payload: id });
+  }
+
   return (
     <CartContext.Provider
       value={{
@@ -24,6 +28,7 @@ export const CartProvider = ({ children }) => {
         cartSize: state.cartSize,
         totalCost: state.totalCost,
         setProduct,
+        removeProduct
       }}
     >
       {children}

@@ -1,11 +1,14 @@
 import shortid from 'shortid';
 
 export const SET_PRODUCT = 'SET_PRODUCT';
+export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 
 export default (state, action) => {
   switch (action.type) {
     case SET_PRODUCT:
       return setProduct(state, action.payload);
+    case REMOVE_PRODUCT:
+      return removeProduct(state, action.payload);
     default:
       return state;
   }
@@ -52,4 +55,11 @@ function setProduct(state, cartItem) {
  */
 function getTotal(cart) {
   return cart.map((c) => Number(c.allCost)).reduce((a, b) => a + b, 0);
+}
+
+function removeProduct(state, id) {
+  const cart = state.cart.filter((item) => item.id !== id);
+  const totalCost = getTotal(cart);
+  const cartSize = cart.map((c) => c.qty).reduce((a, b) => a + b, 0);
+  return { ...state, cart, totalCost, cartSize };
 }
