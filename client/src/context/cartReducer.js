@@ -24,8 +24,10 @@ function setProduct(state, cartItem) {
     newItem['allCost'] = item.product.price * newItem.qty;
     const cart = state.cart.filter((c, i) => i !== index);
     const newCart = [...cart, newItem].sort((a, b) => a.date - b.date);
+    const totalCost = getTotal(newCart);
     return {
       ...state,
+      totalCost,
       cart: newCart,
       cartSize: state.cartSize + 1,
     };
@@ -33,9 +35,21 @@ function setProduct(state, cartItem) {
   cartItem['allCost'] = cartItem.product.price;
   cartItem['id'] = shortid();
   cartItem['date'] = Date.now();
+  const newCart = [...state.cart, cartItem];
+  const totalCost = getTotal(newCart);
   return {
     ...state,
-    cart: [...state.cart, cartItem],
+    totalCost,
+    cart: newCart,
     cartSize: state.cartSize + 1,
   };
+}
+
+/**
+ * Returns the total of the bag
+ * @param {Array} cart all the cart items in a array
+ * @returns number
+ */
+function getTotal(cart) {
+  return cart.map((c) => Number(c.allCost)).reduce((a, b) => a + b, 0);
 }

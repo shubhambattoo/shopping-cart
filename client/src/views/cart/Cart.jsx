@@ -4,7 +4,7 @@ import CartProduct from '../../components/cartProduct/CartProduct';
 import { CartContext } from '../../context/cartContext';
 
 export const Cart = () => {
-  const { cart } = useContext(CartContext);
+  const { cart, totalCost } = useContext(CartContext);
 
   return (
     <div className="container">
@@ -27,7 +27,7 @@ export const Cart = () => {
             <div className="card-content">
               <div className="item">
                 <div className="text">Bag Total</div>
-                <div className="price">14995.00</div>
+                <div className="price">{totalCost.toFixed(2)}</div>
               </div>
               <div className="item">
                 <div className="text">Shipping</div>
@@ -35,12 +35,12 @@ export const Cart = () => {
               </div>
               <div className="item total">
                 <div className="text">Total</div>
-                <div className="price">14995.00</div>
+                <div className="price">{totalCost.toFixed(2)}</div>
               </div>
             </div>
             <div className="card-footer">
               <div className="card-footer-item">
-                <button className="button is-success">Place Order</button>
+                <button className="button is-success" disabled={!cart.length}>Place Order</button>
               </div>
             </div>
           </div>
