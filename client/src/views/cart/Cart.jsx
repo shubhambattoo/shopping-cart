@@ -3,7 +3,7 @@ import './Cart.css';
 import CartProduct from '../../components/cartProduct/CartProduct';
 import { CartContext } from '../../context/cartContext';
 
-export const Cart = () => {
+const Cart = () => {
   const { cart, totalCost } = useContext(CartContext);
 
   return (
@@ -49,3 +49,5 @@ export const Cart = () => {
     </div>
   );
 };
+
+export default Cart;

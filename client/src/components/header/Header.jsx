@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/cartContext';
 
-export const Header = () => {
+const Header = () => {
   const { cartSize } = useContext(CartContext);
   return (
     <header>
@@ -48,7 +48,7 @@ export const Header = () => {
                 </g>
               </g>
             </svg>
-            &nbsp; Buy-IT
+            &nbsp; Sneakers Heads
           </Link>
         </div>
 
@@ -78,3 +78,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

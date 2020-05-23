@@ -6,7 +6,7 @@ import { Product } from '../../components/product/Product';
 import Select from '../../components/select/Select';
 import { Loader } from '../../components/loader/Loader';
 
-export const Products = () => {
+const Products = () => {
   const [products, setProducts] = useState([]);
   const [sortBy, setSortBy] = useState('created');
   const [sortVal, setsortVal] = useState('0');
@@ -103,3 +103,5 @@ function getProducts(url, setProducts) {
       setProducts([]);
     });
 }
+
+export default Products;

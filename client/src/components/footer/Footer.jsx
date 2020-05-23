@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer
       className="footer"
@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="content has-text-centered">
         <p>
           <strong style={{ color: '#f1f1f1' }}>
-            Shopping Cart <em>Buy-IT </em>
+            Shopping Cart <em>Sneaker Heads </em>
           </strong>
           by
           <a href="https://github.com/shubhambattoo"> Shubham Battoo</a>. &copy;
@@ -19,3 +19,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;
