@@ -62,7 +62,11 @@ export const Products = () => {
           </div>
           <div
             className="column"
-            style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 75 }}
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+              marginTop: 75,
+            }}
           >
             <Select
               options={selectOptions}
@@ -74,6 +78,7 @@ export const Products = () => {
         </div>
       )}
       <div className="products">
+        <div style={{margin: '0 0 20px'}}>{products.length} product(s) found.</div>
         <div className="columns is-multiline is-3 is-variable">
           {products && products.length > 0 ? (
             products.map((product) => (

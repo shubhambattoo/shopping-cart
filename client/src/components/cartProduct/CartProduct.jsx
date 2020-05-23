@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
 
 const CartProduct = ({ cartItem }) => {
-  const { removeProduct } = useContext(CartContext);
+  const { removeProduct, qtyUpdate } = useContext(CartContext);
   const [qty, setQty] = useState(0);
 
   useEffect(() => {
@@ -13,8 +13,19 @@ const CartProduct = ({ cartItem }) => {
     }
   }, [cartItem]);
 
-  function handleRemoveProduct(id) {
-    removeProduct(id);
+  function handleRemoveProduct() {
+    removeProduct(cartItem.id);
+  }
+
+  function increment() {
+    setQty(qty + 1);
+    qtyUpdate({ ...cartItem, qty: qty + 1 });
+  }
+
+  function decrement() {
+    if (qty === 1) return false;
+    setQty(qty - 1);
+    qtyUpdate({ ...cartItem, qty: qty - 1 });
   }
 
   return (
@@ -27,13 +38,22 @@ const CartProduct = ({ cartItem }) => {
           <div className="cart-product__content__title">
             {cartItem.product.name}
           </div>
-          <div className="cart-product__content__meta">Sold By: Nik</div>
+          <div className="cart-product__content__meta">Sold By: Nikes</div>
           <div className="cart-product__content__filter">
-            <div className="text">Qty</div>
+            <div className="text">Quantity</div>
             <div className="filter">
-              <i className="material-icons">add</i>
+              <i
+                className={
+                  qty === 1 ? 'material-icons disabled' : 'material-icons'
+                }
+                onClick={decrement}
+              >
+                remove
+              </i>
               <span>{qty}</span>
-              <i className="material-icons">remove</i>
+              <i className="material-icons" onClick={increment}>
+                add
+              </i>
             </div>
           </div>
         </div>
@@ -42,10 +62,7 @@ const CartProduct = ({ cartItem }) => {
         </div>
       </div>
       <div className="cart-product__footer">
-        <button
-          className="button is-danger"
-          onClick={() => handleRemoveProduct(cartItem.id)}
-        >
+        <button className="button is-danger" onClick={handleRemoveProduct}>
           Remove
         </button>
       </div>
