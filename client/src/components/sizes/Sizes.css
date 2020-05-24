@@ -21,7 +21,7 @@
 
 .sizes {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 15px;
   margin: 15px 0;
 }
@@ -33,4 +33,14 @@
 
 .size input[type='checkbox'] {
   margin-right: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .sizes {
+    padding: 0 15px;
+  }
+
+  .size-container {
+    padding: 0 10px;
+  }
 }

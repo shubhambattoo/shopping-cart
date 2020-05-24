@@ -68,12 +68,7 @@ const Products = () => {
             <Sizes products={products} filterProducts={handleProductsFilter} />
           </div>
           <div
-            className="column"
-            style={{
-              display: 'flex',
-              justifyContent: 'flex-end',
-              marginTop: 75,
-            }}
+            className="column select-container"
           >
             <Select
               options={selectOptions}

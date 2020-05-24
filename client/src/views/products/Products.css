@@ -25,3 +25,21 @@
   font-weight: 300;
   font-size: 18px;
 }
+
+.select-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .select-container {
+    margin-top: 0;
+    justify-content: flex-start;
+    padding: 10px 20px;
+  }
+
+  .products {
+    padding: 0 15px;
+  }
+}
