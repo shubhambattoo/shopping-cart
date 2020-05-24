@@ -1,10 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useLayoutEffect } from 'react';
 import './Cart.css';
 import CartProduct from '../../components/cartProduct/CartProduct';
 import { CartContext } from '../../context/cartContext';
 
 const Cart = () => {
   const { cart, totalCost } = useContext(CartContext);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="container">
@@ -40,7 +44,9 @@ const Cart = () => {
             </div>
             <div className="card-footer">
               <div className="card-footer-item">
-                <button className="button is-success" disabled={!cart.length}>Place Order</button>
+                <button className="button is-success" disabled={!cart.length}>
+                  Place Order
+                </button>
               </div>
             </div>
           </div>
