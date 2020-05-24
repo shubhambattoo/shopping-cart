@@ -10,6 +10,10 @@ const Cart = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  function handleCheckOut() {
+    alert('Checkout - Subtotal : ₹ ' + totalCost);
+  }
+
   return (
     <div className="container">
       <div className="content" style={{ marginTop: '75px' }}>
@@ -44,7 +48,11 @@ const Cart = () => {
             </div>
             <div className="card-footer">
               <div className="card-footer-item">
-                <button className="button is-success" disabled={!cart.length}>
+                <button
+                  className="button is-success"
+                  onClick={handleCheckOut}
+                  disabled={!cart.length}
+                >
                   Place Order
                 </button>
               </div>
