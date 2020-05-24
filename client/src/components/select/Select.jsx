@@ -8,7 +8,7 @@ const Select = ({ options, value, classes = '', ...props }) => {
         <select {...props} value={value}>
           {options.map((item, index) => {
             return (
-              <option value={item.value} disabled={index === 0} key={item.value}>
+              <option value={item.value} key={item.value}>
                 {item.text}
               </option>
             );
