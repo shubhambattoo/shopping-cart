@@ -1,9 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/cartContext';
 
 const Header = () => {
   const { cartSize } = useContext(CartContext);
+  const [showMenu, setShowMenu] = useState(false);
+
+  function handleShowMenu() {
+    setShowMenu(!showMenu);
+  }
+
   return (
     <header>
       <nav
@@ -50,19 +56,20 @@ const Header = () => {
             </svg>
             &nbsp; Sneakers Heads
           </Link>
+          <div
+            role="button"
+            className={showMenu ? 'navbar-burger is-active' : 'navbar-burger'}
+            aria-label="menu"
+            aria-expanded="false"
+            onClick={handleShowMenu}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </div>
         </div>
 
-        <div
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </div>
-        <div className="navbar-menu">
+        <div className={showMenu ? 'navbar-menu is-active' : 'navbar-menu'}>
           <div className="navbar-end">
             <Link className="navbar-item" to="/">
               <i className="material-icons">home</i>
