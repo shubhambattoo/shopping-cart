@@ -1,6 +1,9 @@
+.container {
+  min-height: calc(100vh - 190px);
+}
+
 .products {
   margin: 25px 0;
-  min-height: calc(100vh - 325px);
 }
 
 .product footer button {
@@ -8,7 +11,7 @@
 }
 
 .product {
-  box-shadow: 0 .25em .8em .3em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25em 0.8em 0.3em rgba(0, 0, 0, 0.1);
 }
 
 .product .card-header {

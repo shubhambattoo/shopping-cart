@@ -7,7 +7,7 @@ import Select from '../../components/select/Select';
 import { Loader } from '../../components/loader/Loader';
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(null);
   const [sortBy, setSortBy] = useState('created');
   const [sortVal, setsortVal] = useState('0');
   const [isLoading, setIsLoading] = useState(true);
@@ -20,8 +20,15 @@ const Products = () => {
 
   useEffect(() => {
     const url = `products?sort=${sortBy}`;
-    getProducts(url, setProducts);
-    setIsLoading(false);
+    request(url)
+      .then((res) => {
+        setProducts(res.data.products);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setProducts([]);
+        setIsLoading(false);
+      });
   }, [sortBy]);
 
   function sortProducts(e) {
@@ -55,7 +62,7 @@ const Products = () => {
 
   return (
     <section className="container">
-      {products.length > 0 && (
+      {products && products.length > 0 && (
         <div className="columns">
           <div className="column is-three-quarters">
             <Sizes products={products} filterProducts={handleProductsFilter} />
@@ -78,7 +85,9 @@ const Products = () => {
         </div>
       )}
       <div className="products">
-        <div style={{margin: '0 0 20px'}}>{products.length} product(s) found.</div>
+        <div style={{ margin: '0 0 20px' }}>
+          {products && products.length} product(s) found.
+        </div>
         <div className="columns is-multiline is-3 is-variable">
           {products && products.length > 0 ? (
             products.map((product) => (
