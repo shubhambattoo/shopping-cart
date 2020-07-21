@@ -1,0 +1,232 @@
+[
+    {
+        "_id": {
+            "$oid": "5eab098f7040652237f0a4d2"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0a5f27af-cc61-4e04-a603-5e659567691d/air-jordan-1-mid-shoe-BpARGV.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "11",
+            "11.5",
+            "12"
+        ],
+        "name": "Air Jordan 1 Mid",
+        "price": 9995,
+        "description": "The Air Jordan 1 Mid Shoe is inspired by the first AJ1, offering OG fans a look at how far the Jordan brand has come since 1985."
+    },
+    {
+        "_id": {
+            "$oid": "5eab0afb7040652237f0a4d5"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-b2bcc45b-1223-444e-84d9-533f57cb18d4/jordan-westbrook-one-take-pf-basketball-shoe-gCSh03.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "7.5",
+            "8",
+            "9",
+            "9.5",
+            "10",
+            "12.5",
+            "13"
+        ],
+        "name": "Jordan Westbrook One Take PF",
+        "price": 7995,
+        "description": "The clash of colours and materials gives it a chaotic style, aligning with Russ' intense game and personality."
+    },
+    {
+        "_id": {
+            "$oid": "5eab0c747040652237f0a4d6"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i3prpugaf6eh80w7wtj1/air-jordan-5-retro-shoe-zcfscs.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "7",
+            "10.5"
+        ],
+        "name": "Air Jordan 5 Retro",
+        "price": 15197,
+        "description": ""
+    },
+    {
+        "_id": {
+            "$oid": "5eab0d057040652237f0a4d7"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-79cd3892-7891-43e1-b183-5678b4a00c91/air-jordan-xxxiv-pf-basketball-shoe-bzvghf.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "9",
+            "9.5",
+            "10.5",
+            "11",
+            "13.5"
+        ],
+        "name": "Air Jordan XXXIV PF",
+        "price": 14995,
+        "description": "The Air Jordan XXXIV PF continues the legacy of a cultural icon."
+    },
+    {
+        "_id": {
+            "$oid": "5eab0d9d7040652237f0a4d8"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/mrcrd0kj4ufphrenbwvo/air-jordan-7-retro-shoe-2XK2cz.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "5",
+            "5.5",
+            "6"
+        ],
+        "name": "Air Jordan 7 Retro",
+        "price": 11197,
+        "description": "The Air Jordan 7 Retro celebrates MJ's championship legacy with a reissue of his 7th game shoe, the one he famously wore to gold-medal glory."
+    },
+    {
+        "_id": {
+            "$oid": "5eab0ebc7040652237f0a4da"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/725c5739-463e-4a47-b46e-6e1ddaa089dd/jordan-break-slide-QmwKlG.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "9",
+            "10",
+            "13.5"
+        ],
+        "name": "Jordan Break",
+        "price": 1995,
+        "description": "The Jordan Break Slide features durable synthetic leather and lightweight foam cushioning for underfoot comfort."
+    },
+    {
+        "_id": {
+            "$oid": "5eab0f137040652237f0a4db"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/82e5a9b1-5569-44f7-965d-a05140a63cae/jordan-max-200-shoe-C2S1xN.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "8",
+            "9.5"
+        ],
+        "name": "Jordan Max 200",
+        "price": 10495,
+        "description": ""
+    },
+    {
+        "_id": {
+            "$oid": "5eab0f5f7040652237f0a4dc"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/rxedemwztfeeo9vr1lxy/jordan-mars-270-shoe-Dv27m0.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "10",
+            "10.5",
+            "11"
+        ],
+        "name": "Jordan Mars 270",
+        "price": 11997,
+        "description": "the Jordan Mars 270 is a modern-day remix that offers a heavy dose of heritage"
+    },
+    {
+        "_id": {
+            "$oid": "5eab0faf7040652237f0a4dd"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/tcjavk12cqnxbekq2hv6/air-jordan-13-retro-shoe-pvTjVke9.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "13"
+        ],
+        "name": "Air Jordan 13 Retro",
+        "price": 15995,
+        "description": "the Air Jordan 13 Retro is based on the OG model and has the same responsive cushioning and premium materials"
+    },
+    {
+        "_id": {
+            "$oid": "5eab10457040652237f0a4de"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ea735df4-e0b1-4511-b9d4-a66a7e22490a/air-jordan-1-mid-se-shoe-xnGlQq.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "9",
+            "10",
+            "13"
+        ],
+        "name": "Air Jordan 1 Mid SE",
+        "price": 7997,
+        "description": "it captures the essence of the original through a modern lens."
+    },
+    {
+        "_id": {
+            "$oid": "5eab10817040652237f0a4df"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-8566cbb7-31f2-40a3-be5d-4fdfc9e7452a/air-force-1-react-shoe-gfv33P.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "8.5",
+            "11"
+        ],
+        "name": "Nike Air Force 1 React",
+        "price": 9995,
+        "description": ""
+    },
+    {
+        "_id": {
+            "$oid": "5eab10ca7040652237f0a4e0"
+        },
+        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/u1hmpofow0mrqdmdznbc/air-vapormax-flyknit-3-shoe-xr9cgR.jpg",
+        "created": 1588267240137,
+        "currency": {
+            "id": "RUPEES",
+            "format": "₹"
+        },
+        "sizes": [
+            "8.5",
+            "11",
+            "12",
+            "13"
+        ],
+        "name": "Nike Air VaporMax Flyknit 3",
+        "price": 16995,
+        "description": "Revolutionary VaporMax technology keeps a spring in your step with toe-to-heel cushioning."
+    }
+]
