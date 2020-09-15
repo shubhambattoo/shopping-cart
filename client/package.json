@@ -10,7 +10,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "shortid": "^2.2.15"
   },
   "scripts": {
@@ -34,7 +34,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy" : "http://localhost:3000",
+  "proxy": "http://localhost:3000",
   "devDependencies": {
     "cross-env": "^7.0.2"
   }
