@@ -17,6 +17,79 @@ Please note we have a code of conduct, please follow it in all your interactions
    do not have permission to do that, you may request the second reviewer to merge it for you.
 1. Please link your pull request to an existing issue.
 
+## Folder Structure
+
+```bash
+├── app.js
+├── client
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── README.md
+│   └── src
+│       ├── App.css
+│       ├── App.jsx
+│       ├── App.test.js
+│       ├── components
+│       │   ├── cartProduct
+│       │   │   └── CartProduct.jsx
+│       │   ├── checkbox
+│       │   │   └── Checkbox.jsx
+│       │   ├── footer
+│       │   │   └── Footer.jsx
+│       │   ├── header
+│       │   │   └── Header.jsx
+│       │   ├── loader
+│       │   │   ├── Loader.css
+│       │   │   └── Loader.jsx
+│       │   ├── product
+│       │   │   └── Product.jsx
+│       │   ├── select
+│       │   │   └── Select.jsx
+│       │   └── sizes
+│       │       ├── Sizes.css
+│       │       └── Sizes.jsx
+│       ├── context
+│       │   ├── cartContext.js
+│       │   └── cartReducer.js
+│       ├── index.css
+│       ├── index.js
+│       ├── serviceWorker.js
+│       ├── setupTests.js
+│       ├── utils
+│       │   └── fetch.js
+│       └── views
+│           ├── cart
+│           │   ├── Cart.css
+│           │   └── Cart.jsx
+│           └── products
+│               ├── Products.css
+│               └── Products.jsx
+├── controllers
+│   └── product.js
+├── data
+│   └── products.json
+├── github
+├── LICENSE
+├── models
+│   └── Product.js
+├── package.json
+├── package-lock.json
+├── README.md
+├── routes
+│   └── product.js
+├── server.js
+└── utils
+    ├── apiFeatures.js
+    └── catchAsync.js
+```
+
 ## Scripts
 
 An explanation of the `package.json` scripts.
