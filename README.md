@@ -65,6 +65,8 @@ Shubham Battoo
 Contributions, issues and feature requests are welcome!
 Feel free to check [issues](https://github.com/shubhambattoo/shopping-cart/issues) page.
 
+View [CONTRIBUTING.md](https://github.com/shubhambattoo/shopping-cart/blob/master/CONTRIBUTING.md) to learn about the style guide, folder structure, scripts, and how to contribute.
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
