@@ -28,3 +28,14 @@ exports.getProducts = catchAsync(async (req, res, next) => {
     data: { products: docs },
   });
 });
+
+exports.getProduct = catchAsync(async (req, res, next) => {
+  const product = await Product.findOne({ _id: req.params.id });
+
+  res.status(200).json({
+    status: 'ok',
+    data: {
+      product,
+    },
+  });
+});
