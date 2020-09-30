@@ -1,9 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Prompt:wght@200;400;500;600&display=swap');
+
+:root {
+  --background: #f7f7f7;
+  --black-color: #222;
+  --background-rgb: 247, 247, 247;
+  --font-family-2: 'Oswald', sans-serif;
+  --font-family: 'Prompt', sans-serif;
+  --header-background: var(--background);
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-weight: 200;
+  background-color: var(--background);
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+body.trans {
+  --header-background: transparent;
+}
+
+@media screen and (min-width:993px) {
+  body.noscroll-web {
+    overflow: hidden;
+  }
+}
+
+.no-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  letter-spacing: 1px;
+  color: #888;
+  font-weight: 500;
+}
+
+.footer {
+  padding: 20px 50px;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer a {
+  color: #666;
+}
+
+.footer em {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.react-multi-carousel-list {
+  height: 100%;
+  /* width: calc(100vw - 20px); */
+}
+
+ul.react-multi-carousel-track {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.react-multi-carousel-track li {
+  height: 100%;
+}
+
+/* Grid items filtering  via css classes */
+.women_items .prod:not(.women_item) {
+  display: none !important;
+}
+
+.women_items .prod.women_item {
+  display: block !important;
+}
+
+.men_items .prod:not(.men_item) {
+  display: none !important;
+}
+
+.men_items .prod.men_item {
+  display: block !important;
+}
+
+.kid_items .prod:not(.kid_item) {
+  display: none !important;
+}
+
+.kid_items .prod.kid_item {
+  display: block !important;
+}
+
+.unisex_items .prod:not(.unisex_item) {
+  display: none !important;
+}
+
+.unisex_items .prod.unisex_item {
+  display: block !important;
 }
