@@ -15,7 +15,15 @@
     "react",
     "javsacript",
     "nodejs",
-    "mongodb"
+    "mongodb",
+    "shopping-cart",
+    "backend-services",
+    "hooks-api-react",
+    "context-api",
+    "usereducer",
+    "sneakers",
+    "create-react-app",
+    "mern-stack"
   ],
   "author": "shubhambattoo",
   "license": "ISC",

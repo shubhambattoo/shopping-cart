@@ -14,7 +14,6 @@
   top: 0;
   z-index: 2;
   background: var(--header-background);
-  /* background: transparent; */
 }
 
 .brand {
@@ -56,19 +55,16 @@
   justify-content: center;
   transition: background .2s ease-in;
   user-select: none;
-}
-
-.cart:hover {
-  background: #dcdada
-}
-
-.cart a {
   text-decoration: none;
   display: flex;
   align-items: center;
   color: #777;
   font-size: 14px;
   font-weight: 600;
+}
+
+.cart:hover {
+  background: #dcdada
 }
 
 .store_menu_wrapper {
@@ -99,6 +95,7 @@
   opacity: 0.8;
   overflow-x: auto;
   overflow-y: hidden;
+  scrollbar-width: none;
 }
 
 .store_menu::-webkit-scrollbar {
