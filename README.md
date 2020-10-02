@@ -55,13 +55,6 @@ npm start
 
 This should start up the React application on PORT 3001 and you open [http://localhost:3001](http://localhost:3001)
 
-## Author
-
-Shubham Battoo
-
-- Twitter: [@Shubham_batt](https://twitter.com/Shubham_batt)
-- Github: [@shubhambattoo](https://github.com/shubhambattoo)
-
 ## Contributing
 
 Contributions, issues and feature requests are welcome!
@@ -79,6 +72,13 @@ View [CONTRIBUTING.md](https://github.com/shubhambattoo/shopping-cart/blob/maste
     </td>
   </tr>
 </table>
+
+## Author
+
+Shubham Battoo
+
+- Twitter: [@Shubham_batt](https://twitter.com/Shubham_batt)
+- Github: [@shubhambattoo](https://github.com/shubhambattoo)
 
 ## Show your support
 
