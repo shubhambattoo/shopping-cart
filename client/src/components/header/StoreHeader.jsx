@@ -28,11 +28,6 @@ const FootwareMenus = () => {
       title: 'Slides',
       active: false,
     },
-    // {
-    //   id: 6,
-    //   title: 'Sandals',
-    //   active: false,
-    // },
   ];
 
   return (

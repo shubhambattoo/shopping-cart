@@ -6,7 +6,7 @@
 
 ### 🏠 [Shopping Cart](https://react-shopping-cart-12045.herokuapp.com/)
 
-![screen](./cart.png)
+![screen](./github/cart.png)
 
 ## Prerequisites
 
