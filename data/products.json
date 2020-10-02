@@ -1,232 +1,817 @@
-[
+[{
+  "_id": {
+    "$oid": "5f6d025008a1b6f0e5636bc3"
+  },
+  "status": 1,
+  "customerType": 2,
+  "category": "sneakers",
+  "images": [
     {
-        "_id": {
-            "$oid": "5eab098f7040652237f0a4d2"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0a5f27af-cc61-4e04-a603-5e659567691d/air-jordan-1-mid-shoe-BpARGV.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "11",
-            "11.5",
-            "12"
-        ],
-        "name": "Air Jordan 1 Mid",
-        "price": 9995,
-        "description": "The Air Jordan 1 Mid Shoe is inspired by the first AJ1, offering OG fans a look at how far the Jordan brand has come since 1985."
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/058a81e7-963c-4236-a350-6599ce5d1fec/air-jordan-1-mid-se-shoe-xnGlQq.jpg",
+      "color": "Purple",
+      "hex": "#492B70"
     },
     {
-        "_id": {
-            "$oid": "5eab0afb7040652237f0a4d5"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-b2bcc45b-1223-444e-84d9-533f57cb18d4/jordan-westbrook-one-take-pf-basketball-shoe-gCSh03.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "7.5",
-            "8",
-            "9",
-            "9.5",
-            "10",
-            "12.5",
-            "13"
-        ],
-        "name": "Jordan Westbrook One Take PF",
-        "price": 7995,
-        "description": "The clash of colours and materials gives it a chaotic style, aligning with Russ' intense game and personality."
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/16104cc9-fe1a-4eca-a244-b1ec46e3233e/air-jordan-1-mid-se-shoe-xnGlQq.jpg",
+      "color": "Blue",
+      "hex": "#0C3492"
     },
     {
-        "_id": {
-            "$oid": "5eab0c747040652237f0a4d6"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i3prpugaf6eh80w7wtj1/air-jordan-5-retro-shoe-zcfscs.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "7",
-            "10.5"
-        ],
-        "name": "Air Jordan 5 Retro",
-        "price": 15197,
-        "description": ""
-    },
-    {
-        "_id": {
-            "$oid": "5eab0d057040652237f0a4d7"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-79cd3892-7891-43e1-b183-5678b4a00c91/air-jordan-xxxiv-pf-basketball-shoe-bzvghf.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "9",
-            "9.5",
-            "10.5",
-            "11",
-            "13.5"
-        ],
-        "name": "Air Jordan XXXIV PF",
-        "price": 14995,
-        "description": "The Air Jordan XXXIV PF continues the legacy of a cultural icon."
-    },
-    {
-        "_id": {
-            "$oid": "5eab0d9d7040652237f0a4d8"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/mrcrd0kj4ufphrenbwvo/air-jordan-7-retro-shoe-2XK2cz.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "5",
-            "5.5",
-            "6"
-        ],
-        "name": "Air Jordan 7 Retro",
-        "price": 11197,
-        "description": "The Air Jordan 7 Retro celebrates MJ's championship legacy with a reissue of his 7th game shoe, the one he famously wore to gold-medal glory."
-    },
-    {
-        "_id": {
-            "$oid": "5eab0ebc7040652237f0a4da"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/725c5739-463e-4a47-b46e-6e1ddaa089dd/jordan-break-slide-QmwKlG.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "9",
-            "10",
-            "13.5"
-        ],
-        "name": "Jordan Break",
-        "price": 1995,
-        "description": "The Jordan Break Slide features durable synthetic leather and lightweight foam cushioning for underfoot comfort."
-    },
-    {
-        "_id": {
-            "$oid": "5eab0f137040652237f0a4db"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/82e5a9b1-5569-44f7-965d-a05140a63cae/jordan-max-200-shoe-C2S1xN.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "8",
-            "9.5"
-        ],
-        "name": "Jordan Max 200",
-        "price": 10495,
-        "description": ""
-    },
-    {
-        "_id": {
-            "$oid": "5eab0f5f7040652237f0a4dc"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/rxedemwztfeeo9vr1lxy/jordan-mars-270-shoe-Dv27m0.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "10",
-            "10.5",
-            "11"
-        ],
-        "name": "Jordan Mars 270",
-        "price": 11997,
-        "description": "the Jordan Mars 270 is a modern-day remix that offers a heavy dose of heritage"
-    },
-    {
-        "_id": {
-            "$oid": "5eab0faf7040652237f0a4dd"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/tcjavk12cqnxbekq2hv6/air-jordan-13-retro-shoe-pvTjVke9.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "13"
-        ],
-        "name": "Air Jordan 13 Retro",
-        "price": 15995,
-        "description": "the Air Jordan 13 Retro is based on the OG model and has the same responsive cushioning and premium materials"
-    },
-    {
-        "_id": {
-            "$oid": "5eab10457040652237f0a4de"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ea735df4-e0b1-4511-b9d4-a66a7e22490a/air-jordan-1-mid-se-shoe-xnGlQq.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "9",
-            "10",
-            "13"
-        ],
-        "name": "Air Jordan 1 Mid SE",
-        "price": 7997,
-        "description": "it captures the essence of the original through a modern lens."
-    },
-    {
-        "_id": {
-            "$oid": "5eab10817040652237f0a4df"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-8566cbb7-31f2-40a3-be5d-4fdfc9e7452a/air-force-1-react-shoe-gfv33P.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "8.5",
-            "11"
-        ],
-        "name": "Nike Air Force 1 React",
-        "price": 9995,
-        "description": ""
-    },
-    {
-        "_id": {
-            "$oid": "5eab10ca7040652237f0a4e0"
-        },
-        "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/u1hmpofow0mrqdmdznbc/air-vapormax-flyknit-3-shoe-xr9cgR.jpg",
-        "created": 1588267240137,
-        "currency": {
-            "id": "RUPEES",
-            "format": "₹"
-        },
-        "sizes": [
-            "8.5",
-            "11",
-            "12",
-            "13"
-        ],
-        "name": "Nike Air VaporMax Flyknit 3",
-        "price": 16995,
-        "description": "Revolutionary VaporMax technology keeps a spring in your step with toe-to-heel cushioning."
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/gmtfp90ir3sy3q3lzpvl/air-jordan-1-mid-se-shoe-xnGlQq.jpg",
+      "color": "Black",
+      "hex": "#111312"
     }
-]
+  ],
+  "created": 1600979464563,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "12",
+    "12.5",
+    "13"
+  ],
+  "name": "Air Jordan 1 Mid SE",
+  "price": 9995,
+  "description": "The Air Jordan 1 Mid SE maintains the timeless appeal of the first AJ1, revamped with fresh colours to give it an updated profile. It has a lightweight Air-Sole unit and a mix of natural and synthetic materials that make up its classic look.",
+  "productCode": "852542-105",
+  "ratings": {
+    "total": 63,
+    "avg": 5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6d0ad908a1b6f0e5636bc4"
+  },
+  "status": 1,
+  "customerType": 2,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9032720f-dd0c-490d-8bf9-eaf4822c2df1/air-force-1-07-shoe-4tlqmZ.jpg",
+      "color": "White",
+      "hex": "#EEE"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5d5977ef-675f-440b-a330-9cc4b7339f89/air-force-1-07-shoe-4tlqmZ.jpg",
+      "color": "Black",
+      "hex": "#111312"
+    }
+  ],
+  "created": 1600981421087,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5",
+    "12"
+  ],
+  "name": "Nike Air Force 1 '07",
+  "price": 8195,
+  "description": "The radiance lives on in the Nike Air Force 1 '07, the b-ball OG that puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to make you shine.",
+  "productCode": "CT2816-100",
+  "ratings": {
+    "total": 0,
+    "avg": 0,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6d734f19ce90070b4837ce"
+  },
+  "status": 2,
+  "customerType": 3,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5dd81c52-a16c-4113-8866-45d1f53be935/air-zoom-tempo-next-running-shoe-cjJSXN.jpg",
+      "color": "White",
+      "hex": "#FAFAFA"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/0538d365-3de1-4ee8-93bf-8e3ac2d184b6/air-zoom-tempo-next-running-shoe-cjJSXN.jpg",
+      "color": "White",
+      "hex": "#FAFAFA"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/babd2e16-0393-4da6-acc1-dfbdf0882f6c/air-zoom-tempo-next-running-shoe-cjJSXN.jpg",
+      "color": "Black",
+      "hex": "#111312"
+    }
+  ],
+  "created": 1601008415022,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9"
+  ],
+  "name": "Nike Air Zoom Tempo Next",
+  "price": 17595,
+  "description": "The Nike Air Zoom Tempo Next% mixes durability with a design that helps push you towards your personal best. The result is a shoe built like a racer, but made for your everyday training routine.",
+  "productCode": "CI9924-100",
+  "ratings": {
+    "total": 4,
+    "avg": 5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6d74c519ce90070b4837cf"
+  },
+  "status": 1,
+  "customerType": 3,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/43a9b23d-8c4a-450a-8945-6a480b1eb735/zoom-fly-3-running-shoe-M5N4X5.jpg",
+      "color": "Pink",
+      "hex": "#E53F90"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ebfd2d7c-4ae7-4730-ba3d-6d349d194ff7/zoom-fly-3-running-shoe-M5N4X5.jpg",
+      "color": "Platinum",
+      "hex": "#A4B6BA"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2aa00ff3-eb09-4d18-b259-68dde977a2b4/zoom-fly-3-running-shoe-M5N4X5.jpg",
+      "color": "Light Pink",
+      "hex": "#C9A4B4"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/v8qruakzyyoesrwp891u/zoom-fly-3-running-shoe-M5N4X5.jpg",
+      "color": "Black",
+      "hex": "#2F3033"
+    }
+  ],
+  "created": 1601008816970,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9"
+  ],
+  "name": "Nike Zoom Fly 3",
+  "price": 13995,
+  "description": "Inspired by the Vaporfly, the Nike Zoom Fly 3 gives distance runners race-day comfort and durability. The power of a carbon-fibre plate and responsive cushioning keeps you in the running mile after mile.",
+  "productCode": "AT8241-005",
+  "ratings": {
+    "total": 34,
+    "avg": 4.5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6d761c19ce90070b4837d0"
+  },
+  "status": 1,
+  "customerType": 5,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/36716a4a-da18-4c28-b35e-06e929a06348/team-hustle-d-9-lil-younger-shoe-lbhp5t.jpg",
+      "color": "Blue",
+      "hex": "#3089D0"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5c7e7581-db21-42b6-93b9-ef21c202ef03/team-hustle-d-9-lil-younger-shoe-lbhp5t.jpg",
+      "color": "Red",
+      "hex": "#C61B22"
+    }
+  ],
+  "created": 1601009129502,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "12C",
+    "12.5C",
+    "13C",
+    "13.5C",
+    "1Y",
+    "1.5Y",
+    "2Y",
+    "2.5Y",
+    "3Y"
+  ],
+  "name": "Nike Team Hustle D 9 Lil",
+  "price": 4495,
+  "description": "The Nike Team Hustle D 9 Lil features Zig or Zag, the tall and limber members of the Lil Monsters family. Little feet will be ready to jump for the dunk in these kicks made for basketball lovers.",
+  "productCode": "CT4063-400",
+  "ratings": {
+    "total": 34,
+    "avg": 4.5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e0a4340fdb952de7f9314"
+  },
+  "status": 2,
+  "customerType": 2,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/33201b0e-8971-45eb-b91b-edac41535f5a/air-zoom-pegasus-37-running-shoe-mwrTCc.jpg",
+      "color": "Black/Lime",
+      "hex": "#0D0D0D"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3b262eb6-e41f-46f7-bc43-886b7ee82f50/air-zoom-pegasus-37-running-shoe-mwrTCc.jpg",
+      "color": "Black/Yellow",
+      "hex": "#F0E53C"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ea66f58b-15d9-4756-8079-5fb7e8a9b03d/air-zoom-pegasus-37-running-shoe-mwrTCc.jpg",
+      "color": "Blue",
+      "hex": "#378ECC"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e8aa7537-5848-4418-9ab4-1ff9cc27c17c/air-zoom-pegasus-37-running-shoe-mwrTCc.jpg",
+      "color": "Black",
+      "hex": "#0A0A0A"
+    }
+  ],
+  "created": 1601009129502,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "7",
+    "8"
+  ],
+  "name": "Nike Air Zoom Pegasus 37",
+  "price": 7997,
+  "description": "Reinvigorate your stride with the Nike Air Zoom Pegasus 37. Delivering the same fit and feel that runners love, the shoe has an all-new forefoot cushioning unit and foam for maximum responsiveness. The result is a durable, lightweight trainer designed for everyday running.",
+  "productCode": "BQ9646-001",
+  "ratings": {
+    "total": 102,
+    "avg": 4.5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e0b6440fdb952de7f9315"
+  },
+  "status": 2,
+  "customerType": 2,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/72a58094-d560-41f7-80a3-7f16385325d0/air-vapormax-2020-fk-shoe-6CFbcQ.jpg",
+      "color": "Black",
+      "hex": "#1C1B1D"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1d6a319a-eb6a-4619-8957-4e0f6b16788e/air-vapormax-2020-fk-shoe-6CFbcQ.jpg",
+      "color": "Iron Grey",
+      "hex": "#3A363D"
+    }
+  ],
+  "created": 1601047285438,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "6",
+    "7.5",
+    "8",
+    "8.5"
+  ],
+  "name": "Nike Air VaporMax 2020 FK",
+  "price": 18695,
+  "description": "Designed with sustainability in mind, the Nike Air VaporMax 2020 Flyknit is made from at least 50% recycled content by weight. By utilising leftover materials, recycled polyester, recycled foam and a Nike Air-Sole made from at least 75% recycled TPU, the VaporMax 2020 Flyknit marks the next step towards our ultimate goal of zero carbon and zero waste.",
+  "productCode": "CJ6740-002",
+  "ratings": {
+    "total": 34,
+    "avg": 4.5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e0c3040fdb952de7f9316"
+  },
+  "status": 1,
+  "customerType": 2,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9fad5bea-6081-4894-a7cc-69e5562d0342/nikecourt-air-zoom-gp-turbo-hard-court-tennis-shoe-H2KvSk.jpg",
+      "color": "Black/Yellow",
+      "hex": "#B9982D"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/999ea062-7111-48c4-8066-a89613053227/nikecourt-air-zoom-gp-turbo-hard-court-tennis-shoe-H2KvSk.jpg",
+      "color": "Racer Blue",
+      "hex": "#102266"
+    }
+  ],
+  "created": 1601047571500,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "6",
+    "7.5",
+    "8",
+    "8.5"
+  ],
+  "name": "NikeCourt Air Zoom GP Turbo",
+  "price": 12495,
+  "description": "Tennis matches are fast, fierce and long. The NikeCourt Air Zoom GP Turbo combines an incredibly responsive, full-length Zoom Air unit with zones of durability so you can stay fresh for longer.",
+  "productCode": "CK7513-003",
+  "ratings": {
+    "total": 6,
+    "avg": 4,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e0d3840fdb952de7f9317"
+  },
+  "status": 1,
+  "customerType": 4,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d0ef8df6-eed6-4679-b63b-4aa2194a6bb3/zoom-rize-2-ep-basketball-shoe-0KlTDj.jpg",
+      "color": "University Red",
+      "hex": "#CD1D26"
+    }
+  ],
+  "created": 1601047852170,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "6",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5",
+    "12",
+    "13"
+  ],
+  "name": "Nike Zoom Rize 2 EP (Team)",
+  "price": 12495,
+  "description": "It's simple: Less weight plus more responsiveness equals a greater return on your energy. With cushioning that responds with every step, the Nike Zoom Rize 2 (Team) combines lightweight, extra-durable materials to help you outlast your opponents all season long. This EP version uses an extra-durable outsole that's ideal for outdoor courts.",
+  "productCode": "CZ5021-100",
+  "ratings": {
+    "total": 6,
+    "avg": 4,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e0e8940fdb952de7f9318"
+  },
+  "status": 1,
+  "customerType": 3,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f94c1385-124f-4403-a803-6a0b9a3e981a/metcon-6-training-shoe-cHmFGp.jpg",
+      "color": "Hyper Jade",
+      "hex": "#50CFC6"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ce49bc60-637d-4801-97f1-82227586d8de/metcon-6-training-shoe-cHmFGp.jpg",
+      "color": "Metallic Gold",
+      "hex": "#D47F42"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d9dc2966-8473-4c2e-b2e4-733abffbd282/metcon-6-training-shoe-cHmFGp.jpg",
+      "color": "Black",
+      "hex": "#141415"
+    }
+  ],
+  "created": 1601048173895,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9"
+  ],
+  "name": "Nike Metcon 6",
+  "price": 11495,
+  "description": "The most breathable version yet, the Nike Metcon 6 helps keep your foot cool when you're going full steam. It stands up to the push and pull of lifting and high-intensity workouts, delivering stability and durability.",
+  "productCode": "AT3160-020",
+  "ratings": {
+    "total": 11,
+    "avg": 5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e0f8940fdb952de7f9319"
+  },
+  "status": 1,
+  "customerType": 3,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/eey4dmk7yw3vx7zn9qlm/court-vision-low-shoe-41zCWb.jpg",
+      "color": "White",
+      "hex": "#FFFFFF"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/hdjlb8wougxgtz1fk7as/court-vision-low-shoe-41zCWb.jpg",
+      "color": "Black",
+      "hex": "#333333"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1c2291c6-ae17-4b4a-a4f1-c85fa7402df5/court-vision-low-shoe-41zCWb.jpg",
+      "color": "Washed Coral",
+      "hex": "#DAB9AE"
+    }
+  ],
+  "created": 1601048315560,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5"
+  ],
+  "name": "Nike Court Vision Low",
+  "price": 4995,
+  "description": "The fastbreak style of '80s basketball meets the fast-paced culture of today's game, with the new Nike Court Vision Low. It features an upper inspired by old-school basketball sneakers and the classic rubber cupsole featured on some of the most iconic silhouettes of the past.",
+  "productCode": "CD5434-105",
+  "ratings": {
+    "total": 15,
+    "avg": 4.5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e10b740fdb952de7f931a"
+  },
+  "status": 1,
+  "customerType": 3,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/aca63fb3-5609-419e-ada5-78abc984bf21/react-miler-running-shoe-Dq2hXp.jpg",
+      "color": "Pink Blast",
+      "hex": "#DAB9AE"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/98e37006-f63d-4d39-8158-b206ae6058e9/react-miler-running-shoe-Dq2hXp.jpg",
+      "color": "Metallic Copper",
+      "hex": "#A29D88"
+    }
+  ],
+  "created": 1601048679348,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9"
+  ],
+  "name": "Nike React Miler",
+  "price": 10995,
+  "description": "The Nike React Miler gives you trusted stability for miles with athlete-informed performance. Made for dependability on your long runs, its intuitive design offers a locked-in fit and a durable feel.",
+  "productCode": "CW1778-103",
+  "ratings": {
+    "total": 13,
+    "avg": 4,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e125c40fdb952de7f931b"
+  },
+  "status": 2,
+  "customerType": 1,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cbc54212-3c42-4241-98bf-e738b551c2c0/air-jordan-1-mid-shoe-BpARGV.jpg",
+      "color": "Laser Blue",
+      "hex": "#2D7EB1"
+    },
+    {
+      "src": "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/dszgheyemdhcu2mt1zse/air-jordan-1-mid-shoe-BpARGV.jpg",
+      "color": "Gym Red",
+      "hex": "#C02946"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/vwymrve3sqdvyhhfr0b0/air-jordan-1-mid-shoe-BpARGV.jpg",
+      "color": "White",
+      "hex": "#FFFFFF"
+    },
+    {
+      "src": "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ixxrt2qznufizqvoiqhh/air-jordan-1-mid-shoe-BpARGV.jpg",
+      "color": "Black",
+      "hex": "#111111"
+    }
+  ],
+  "created": 1601049164072,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "10.5",
+    "11",
+    "11.5",
+    "12",
+    "12.5",
+    "13",
+    "13.5",
+    "14",
+    "14.5"
+  ],
+  "name": "Air Jordan 1 Mid",
+  "price": 9995,
+  "description": "The Air Jordan 1 Mid Shoe is inspired by the first AJ1, offering fans of Jordan retros a chance to follow in the footsteps of greatness. Fresh colour trims the clean, classic materials, injecting some newness into the familiar design.",
+  "productCode": "554724-141",
+  "ratings": {
+    "total": 128,
+    "avg": 4.5,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e157340fdb952de7f931c"
+  },
+  "status": 2,
+  "customerType": 5,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9461535b-e0bb-4cfc-92f3-935394ab0a94/star-runner-2-younger-shoe-v4Wcn5.jpg",
+      "color": "Midnight Blue",
+      "hex": "#192539"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/85f4dc28-f36e-482b-af53-b65df49772c5/star-runner-2-younger-shoe-v4Wcn5.jpg",
+      "color": "Laser Blue",
+      "hex": "#3187A9"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c5d49dde-04cb-4b86-aee8-43b7121744f4/star-runner-2-younger-shoe-v4Wcn5.jpg",
+      "color": "Smoke White",
+      "hex": "#BCB5C3"
+    }
+  ],
+  "created": 1601049935723,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "11C",
+    "12C",
+    "13C",
+    "1Y",
+    "2Y",
+    "3Y"
+  ],
+  "name": "Nike Star Runner 2",
+  "price": 3497,
+  "description": "Your lil' star will love to take off with the Nike Star Runner 2. These made-for-play shoes are durable, cushioned underfoot and easy to strap on. Peek under the shoe for stars moulded into the rubber to tell your kiddo the sky's the limit with every step, skip and jump.",
+  "productCode": "AT1801-405",
+  "ratings": {
+    "total": 1,
+    "avg": 0,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e161940fdb952de7f931d"
+  },
+  "status": 2,
+  "customerType": 5,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/74a70501-1460-4a5c-927e-d4bbfd3bc32a/dynamo-free-younger-shoe-wS8Vjl.jpg",
+      "color": "Black",
+      "hex": "#222222"
+    }
+  ],
+  "created": 1601047571500,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "11C",
+    "12C",
+    "13C",
+    "1Y",
+    "2Y",
+    "3Y"
+  ],
+  "name": "Nike Dynamo Free",
+  "price": 4495,
+  "description": "Little feet shine with the stars in the Nike Dynamo Free. A fun constellation print has reflective design details with metallic elements on the back panel, while super-soft foam comfort cushions every step through their adventures.",
+  "productCode": "DC3272-001",
+  "ratings": {
+    "total": 0,
+    "avg": 0,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e16c140fdb952de7f931e"
+  },
+  "status": 2,
+  "customerType": 5,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/49f86293-1482-40f0-b08a-e90ed0f76bae/revolution-5-and-shoe-7Sfxc1.jpg",
+      "color": "Red",
+      "hex": "#B11923"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e6b1f6e2-0a41-4cdc-a228-68e0b876293a/revolution-5-and-shoe-7Sfxc1.jpg",
+      "color": "Blue",
+      "hex": "#2B7AAD"
+    }
+  ],
+  "created": 1601047285438,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "3C",
+    "4C",
+    "5C",
+    "7C",
+    "8C",
+    "9C"
+  ],
+  "name": "Nike Revolution 5",
+  "price": 2895,
+  "description": "Run, play and have fun with the Nike Revolution 5. It wraps little feet with durable leather for support and soft foam cushioning for revolutionary comfort. A strap makes it easy to take the shoe on and off.",
+  "productCode": "BQ5673-016",
+  "ratings": {
+    "total": 3,
+    "avg": 3,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e180840fdb952de7f931f"
+  },
+  "status": 2,
+  "customerType": 4,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-487b22e3-f7da-4598-b71d-67c05e22fe96/kd-trey-5-viii-ep-basketball-shoe-k4bhfx.jpg",
+      "color": "Black/White",
+      "hex": "#333333"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8b966419-7f72-4437-b3ec-b0c2b1c22f95/kd-trey-5-viii-ep-basketball-shoe-k4bhfx.jpg",
+      "color": "Blue",
+      "hex": "#072971"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/47940d7b-bd88-4b9f-a323-c1480499eec3/kd-trey-5-viii-ep-basketball-shoe-k4bhfx.jpg",
+      "color": "Black/Green",
+      "hex": "#43A447"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-7d9f53de-5bbb-4e52-a6f7-9805e5a7d6b4/kd-trey-5-viii-ep-basketball-shoe-k4bhfx.jpg",
+      "color": "Black/Red",
+      "hex": "#851217"
+    }
+  ],
+  "created": 1601048173895,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5",
+    "12",
+    "12.5",
+    "13"
+  ],
+  "name": "KD Trey 5 VIII EP",
+  "price": 7995,
+  "description": "Kevin Durant goes all-out every play and needs his shoes to keep up. The KD Trey 5 VIII EP has a supportive, responsive midsole paired with multi-directional traction for use on indoor and outdoor courts. ",
+  "productCode": "CK2089-101",
+  "ratings": {
+    "total": 0,
+    "avg": 0,
+    "reviews": []
+  }
+},{
+  "_id": {
+    "$oid": "5f6e18f940fdb952de7f9320"
+  },
+  "status": 2,
+  "customerType": 2,
+  "category": "sneakers",
+  "images": [
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/056a63d5-cbb2-4b9e-bc4d-84aceac06577/free-metcon-3-training-shoe-cJBhpW.jpg",
+      "color": "Limelight",
+      "hex": "#BEBE82"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-f67bc685-8025-412f-84c9-26582b027f79/free-metcon-3-training-shoe-cJBhpW.jpg",
+      "color": "Black",
+      "hex": "#333333"
+    },
+    {
+      "src": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/efdbdb6b-547f-4e16-b202-b254f487059e/free-metcon-3-training-shoe-cJBhpW.jpg",
+      "color": "Grey",
+      "hex": "#3A3A3A"
+    }
+  ],
+  "created": 1601048173895,
+  "currency": {
+    "id": "INR",
+    "format": "₹"
+  },
+  "sizes": [
+    "7",
+    "8",
+    "8.5"
+  ],
+  "name": "Nike Free Metcon 3",
+  "price": 9995,
+  "description": "The Nike Free Metcon 3 combines Nike Free flexibility around the forefoot with Metcon stability in the heel to help you get the most out of your training session.",
+  "productCode": "CK2089-101",
+  "ratings": {
+    "total": 39,
+    "avg": 3.5,
+    "reviews": []
+  }
+}]

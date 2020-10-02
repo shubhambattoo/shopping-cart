@@ -11,11 +11,7 @@ const productSchema = new mongoose.Schema({
   },
   description: {
     type: String,
-    maxlength: 160,
-  },
-  image: {
-    type: String,
-    default: 'default.png',
+    maxlength: 300,
   },
   created: {
     type: Number,
@@ -24,13 +20,39 @@ const productSchema = new mongoose.Schema({
   currency: {
     type: Object,
     default: {
-      id: 'RUPEES',
+      id: 'INR',
       format: '₹',
     },
   },
   sizes: {
     type: Array,
-    required: true
+    required: true,
+  },
+  productCode: String,
+  images: [
+    {
+      src: String,
+      color: String,
+      hexcode: String,
+    },
+  ],
+  category: {
+    type: String,
+    default: 'sneakers',
+    required: [true, 'product category is required'],
+  },
+  customerType: {
+    type: Number,
+    default: 1, // 1:All 2:Men 3:Women 4:Unisex 5:Kid
+  },
+  status: {
+    type: Number,
+    default: 1, // 0:Out of stock, 1:New 2:Available 3:Upcoming
+  },
+  ratings: {
+    total: Number,
+    avg: Number,
+    reviews: [Object],
   },
 });
 

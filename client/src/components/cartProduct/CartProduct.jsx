@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
+import style from '../../views/cart/cart.module.css';
 
 const CartProduct = ({ cartItem }) => {
   const { removeProduct, qtyUpdate } = useContext(CartContext);
@@ -28,43 +29,63 @@ const CartProduct = ({ cartItem }) => {
     qtyUpdate({ ...cartItem, qty: qty - 1 });
   }
 
+  const getCustomerType = (code) => {
+    let cust = '';
+    switch (code) {
+      case 1:
+        cust = "Everyone's";
+        break;
+      case 2:
+        cust = "Men's";
+        break;
+      case 3:
+        cust = "Women's";
+        break;
+      case 5:
+        cust = "Kids's";
+        break;
+      default:
+        cust = 'Unisex';
+        break;
+    }
+    return cust;
+  };
+
   return (
-    <div className="cart-product">
-      <div className="cart-product__content">
-        <div className="cart-product__content__image">
-          <img src={cartItem.product.image} alt={cartItem.product.name} />
+    <div className={style.item}>
+      <div className={style.item_wrapper}>
+        <div className={style.item_remove}>
+          <button type="button" onClick={handleRemoveProduct}>
+            <span className="material-icons">close</span>
+          </button>
         </div>
-        <div className="cart-product__content__text">
-          <div className="cart-product__content__title">
-            {cartItem.product.name}
-          </div>
-          <div className="cart-product__content__meta">Sold By: Nikes</div>
-          <div className="cart-product__content__filter">
-            <div className="text">Quantity</div>
-            <div className="filter">
-              <i
-                className={
-                  qty === 1 ? 'material-icons disabled' : 'material-icons'
-                }
-                onClick={decrement}
-              >
-                remove
-              </i>
-              <span>{qty}</span>
-              <i className="material-icons" onClick={increment}>
-                add
-              </i>
-            </div>
+        <div className={style.item_image}>
+          <img
+            src={cartItem.product.images[0].src}
+            alt={cartItem.product.name}
+          />
+        </div>
+        <div className={style.item_details}>
+          <h3>{cartItem.product.name}</h3>
+          <div className={style.item_meta}>
+            {getCustomerType(cartItem.product.customerType)}{' '}
+            {cartItem.product.category}
           </div>
         </div>
-        <div className="cart-product__content__price">
+        <div className={style.item_controller}>
+          {/* <div className="text">Quantity</div> */}
+
+          <button type="button" onClick={decrement} disabled={qty === 1}>
+            <i className="material-icons">remove</i>
+          </button>
+          <span>{qty}</span>
+          <button type="button" onClick={increment}>
+            <i className="material-icons">add</i>
+          </button>
+        </div>
+        <div className={style.item_price}>
           {cartItem.product.currency.format} {cartItem.allCost.toFixed(2)}
         </div>
-      </div>
-      <div className="cart-product__footer">
-        <button className="button is-danger" onClick={handleRemoveProduct}>
-          Remove
-        </button>
       </div>
     </div>
   );

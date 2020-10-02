@@ -1,13 +1,16 @@
-import React, { useContext, useLayoutEffect } from 'react';
-import './Cart.css';
+import React, { useState, useContext, useLayoutEffect } from 'react';
 import CartProduct from '../../components/cartProduct/CartProduct';
 import { CartContext } from '../../context/cartContext';
+import style from './cart.module.css';
 
 const Cart = () => {
   const { cart, totalCost } = useContext(CartContext);
+  const [coShown, setCOShown] = useState(false);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
+    document.body.classList.add('noscroll-web');
+    document.body.classList.add('trans');
   }, []);
 
   function handleCheckOut() {
@@ -15,51 +18,55 @@ const Cart = () => {
   }
 
   return (
-    <div className="container">
-      <div className="content" style={{ marginTop: '75px' }}>
-        <h4>My Shopping Bag</h4>
-      </div>
-      <div className="columns">
-        <div className="column is-9">
-          <div className="cart-details">
+    <div className={style.page}>
+      <div className={style.wrapper}>
+        {cart.length > 0 ? (
+          <div className={style.items}>
             {cart.map((cartItem) => (
               <CartProduct cartItem={cartItem} key={cartItem.id} />
             ))}
           </div>
-        </div>
-        <div className="column">
-          <div className="card total-box">
-            <div className="card-header">
-              <div className="card-header-title">Price Details</div>
-            </div>
-            <div className="card-content">
-              <div className="item">
+        ) : (
+          <div className={style.empty}>Cart Empty</div>
+        )}
+        <div
+          className={`${style.checkout} ${coShown ? style.checkout_shown : ''}`}
+        >
+          <h2>Order Summary</h2>
+          <div className={style.total_box}>
+            <div className={style.total_box_content}>
+              <div className={style.total_item}>
                 <div className="text">Bag Total</div>
                 <div className="price">{totalCost.toFixed(2)}</div>
               </div>
-              <div className="item">
+              <div className={style.total_item}>
                 <div className="text">Shipping</div>
+                <div className="price">Free</div>
+              </div>
+              <div className={`${style.total_item} ${style.coupon}`}>
+                <div className="text">Discount</div>
                 <div className="price">0.00</div>
               </div>
-              <div className="item total">
+              <div className={style.total_item}>
                 <div className="text">Total</div>
                 <div className="price">{totalCost.toFixed(2)}</div>
               </div>
             </div>
-            <div className="card-footer">
-              <div className="card-footer-item">
-                <button
-                  className="button is-success"
-                  onClick={handleCheckOut}
-                  disabled={!cart.length}
-                >
-                  Place Order
-                </button>
-              </div>
+            <div className={style.checkout_footer}>
+              <button onClick={handleCheckOut} disabled={!cart.length}>
+                Place Order
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <button
+        type="button"
+        onClick={(e) => setCOShown(!coShown)}
+        className={`${style.toggle_btn} ${coShown ? style.toggle_close : ''}`}
+      >
+        <span className="material-icons">keyboard_arrow_left</span>
+      </button>
     </div>
   );
 };
