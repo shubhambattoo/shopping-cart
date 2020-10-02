@@ -6,6 +6,8 @@
 
 ### 🏠 [Shopping Cart](https://react-shopping-cart-12045.herokuapp.com/)
 
+![screen](./cart.png)
+
 ## Prerequisites
 
 - Node > 12 or LTS
@@ -57,8 +59,8 @@ This should start up the React application on PORT 3001 and you open [http://loc
 
 Shubham Battoo
 
-* Twitter: [@Shubham_batt](https://twitter.com/Shubham_batt)
-*  Github: [@shubhambattoo](https://github.com/shubhambattoo)
+- Twitter: [@Shubham_batt](https://twitter.com/Shubham_batt)
+- Github: [@shubhambattoo](https://github.com/shubhambattoo)
 
 ## Contributing
 

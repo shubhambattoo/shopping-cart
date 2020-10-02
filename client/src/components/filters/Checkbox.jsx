@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './checkbox.css';
 
 const Checkbox = ({ label, name, id, ...props }) => {
   return (
-    <label htmlFor={name} className="checkbox">
+    <p className="cb">
       <input type="checkbox" name={name} id={name} {...props} />
-      {label}
-    </label>
+      <label htmlFor={name}>{label}</label>
+    </p>
   );
 };
 
