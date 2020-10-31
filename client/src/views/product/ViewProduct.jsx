@@ -5,7 +5,10 @@ import 'react-multi-carousel/lib/styles.css';
 import { CartContext } from '../../context/cartContext';
 import { Loader } from '../../components/loader/Loader';
 import { request } from '../../utils/fetch';
+import Noty from 'noty';
 import style from './product.module.css';
+import './../../../node_modules/noty/lib/noty.css';
+import './../../../node_modules/noty/lib/themes/relax.css';
 
 const breakPoints = {
   superLargeDesktop: {
@@ -32,24 +35,12 @@ const breakPointsFS = {
 };
 
 const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
-  // const {
-  //   carouselState: { currentSlide },
-  // } = rest;
-
   return (
     <div className={style.arrow_btns}>
-      <button
-        // disabled={currentSlide === 0}
-        type="button"
-        onClick={() => previous()}
-      >
+      <button type="button" onClick={() => previous()}>
         <span className="material-icons">chevron_left</span>
       </button>
-      <button
-        // disabled={currentSlide + 1 >= rest.totalItems}
-        type="button"
-        onClick={() => next()}
-      >
+      <button type="button" onClick={() => next()}>
         <span className="material-icons">chevron_right</span>
       </button>
     </div>
@@ -147,6 +138,13 @@ const ViewProduct = () => {
       product,
     };
     setProduct(cartProduct);
+    new Noty({
+      layout: 'bottomCenter',
+      progressBar: false,
+      text: `<div style="display:flex; align-items: center;gap:15px;"><img width="40" src=${product.images[0].src} alt='sneaker' /> <div>Added to cart</div></div>`,
+      theme: 'relax',
+      timeout: 1000
+    }).show();
   }
 
   const getCustomerType = (code) => {
