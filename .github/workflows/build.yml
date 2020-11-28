@@ -8,14 +8,6 @@ on:
       - master
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
-      - name: Create Build
-        run: npm run hereko-postbuild
   deploy:
     name: deploy
     runs-on: ubuntu-latest
