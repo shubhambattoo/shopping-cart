@@ -94,10 +94,14 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 An explanation of the `package.json` scripts.
 
-| Command         | Description                                 |
-| --------------- | ------------------------------------------- |
-| start           | Start a production server for Shopping Cart |
-| dev             | Start a nodemon dev server for the backend  |
+| Command         | Description                                                       |
+| --------------- | ------------------------------------------------------------------|
+| start           | Start a production server for Shopping Cart                       |
+| dev             | Start a nodemon dev server for the backend and front-end react    |
+| server          | Start a nodemon dev server for backend                            |
+| dev:server      | Build the front-end and run a production server for Shopping Cart |
+| client          | Start a dev server for Front-End                                  |
+| heorku-postbuild| Build the Front-End for deploying to heroku                       |
 
 ## Technologies
 
