@@ -4,7 +4,7 @@ export const SET_PRODUCT = 'SET_PRODUCT';
 export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 export const QTY_UPDATE = 'QTY_UPDATE';
 
-export default (state, action) => {
+export default function cartReducer(state, action) {
   switch (action.type) {
     case SET_PRODUCT:
       return setProduct(state, action.payload);
@@ -15,7 +15,7 @@ export default (state, action) => {
     default:
       return state;
   }
-};
+}
 
 function setProduct(state, cartItem) {
   const item = state.cart.find((ci) => ci.product._id === cartItem.product._id);

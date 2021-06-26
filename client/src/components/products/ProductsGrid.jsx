@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { request } from '../../utils/fetch';
 import { Product } from './Product';
 import { Loader } from '../loader/Loader';

@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from 'react';
+import { createContext, useReducer } from 'react';
 import cartReducer, { SET_PRODUCT, REMOVE_PRODUCT, QTY_UPDATE } from './cartReducer';
 
 const initialState = {

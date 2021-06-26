@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Checkbox from './Checkbox';
 import style from '../products/products.module.css';
 
