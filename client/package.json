@@ -12,7 +12,7 @@
     "react-dom": "^16.13.1",
     "react-multi-carousel": "^2.5.5",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^4.0.3",
     "shortid": "^2.2.15"
   },
   "scripts": {
