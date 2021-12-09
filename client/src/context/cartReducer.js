@@ -1,4 +1,4 @@
-import shortid from 'shortid';
+import { nanoid } from 'nanoid'
 
 export const SET_PRODUCT = 'SET_PRODUCT';
 export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
@@ -39,7 +39,7 @@ function setProduct(state, cartItem) {
     };
   }
   cartItem['allCost'] = cartItem.product.price;
-  cartItem['id'] = shortid();
+  cartItem['id'] = nanoid();
   cartItem['date'] = Date.now();
   const newCart = [...state.cart, cartItem];
   const totalCost = getTotal(newCart);
