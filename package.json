@@ -37,7 +37,7 @@
   "homepage": "https://github.com/shubhambattoo/shopping-cart#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "dotenv": "^14.3.2",
     "express": "^4.17.1",
     "mongoose": "^6.0.13",
     "morgan": "^1.10.0"
