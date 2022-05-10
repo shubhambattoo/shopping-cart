@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/cartContext';
 import Header from './components/header/Header';
 import { Loader } from './components/loader/Loader';
@@ -15,12 +15,12 @@ function App() {
         <>
           <Header />
           <Suspense fallback={<Loader />}>
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/product/:id" component={ViewProduct} />
-              <Route path="/cart" component={Cart} />
-              <Route path="*" component={Home} />
-            </Switch>
+            <Routes>
+              <Route path="/" exact element={<Home />} />
+              <Route path="/product/:id" element={<ViewProduct />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="*" element={<Home />} />
+            </Routes>
           </Suspense>
         </>
       </Router>

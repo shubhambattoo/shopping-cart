@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import style from '../products/products.module.css';
 
 export const Product = ({ product }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [colors] = useState(() =>
     product.images
       .map((img) => ({ name: img.color, code: img.hex }))
@@ -12,9 +12,7 @@ export const Product = ({ product }) => {
   );
 
   function showProductDetails(id) {
-    history.push(
-      `/product/${product.name.split(' ').join('-')}-${product._id}`
-    );
+    navigate(`/product/${product.name.split(' ').join('-')}-${product._id}`);
   }
 
   function getItemKlass(custId) {
