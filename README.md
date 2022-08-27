@@ -4,7 +4,7 @@
 
 > MERN Shopping cart created with React, NodeJS, MongoDB
 
-### 🏠 [Shopping Cart](https://react-shopping-cart-12045.herokuapp.com/)
+### 🏠 [Shopping Cart](https://react-shopping-cart-xvov.onrender.com)
 
 ![screen](./github/cart.png)
 
